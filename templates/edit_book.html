@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Book</title>
+</head>
+<body>
+    {% include "tool_bar.html" %}
+    <h2>Edit Book</h2>
+    <form method="post" action="/edit_book">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" value="{{book.title}}" required><br><br>
+
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" value="{{book.author}}" required><br><br>
+
+        <label for="publication_year">Publication Year:</label><br>
+        <input type="number" id="publication_year" name="publication_year" value="{{book.publication_year}}" required><br><br>
+
+        <label for="genre">Genre (comma-separated):</label><br>
+        <input type="text" id="genre" name="genre" value="{{book.genre}}" required><br><br>
+
+        <label for="isbn">ISBN:</label><br>
+        <input type="text" id="isbn" name="isbn" value="{{book.isbn}}" required><br><br>
+
+        <label for="pages">Number of Pages:</label><br>
+        <input type="number" id="pages" name="pages" value="{{book.pages}}" required><br><br>
+
+        <label for="publisher">Publisher:</label><br>
+        <input type="text" id="publisher" name="publisher" value="{{book.publisher}}" required><br><br>
+
+        <label for="cover_image_url">Cover Image URL:</label><br>
+        <input type="text" id="cover_image_url" name="cover_image_url" value="{{book.cover_image_url}}" required><br><br>
+
+        <label for="rating">Rating (1-5):</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="5" value="{{book.rating}}" required><br><br>
+
+        <label for="available">Available:</label>
+        <input type="checkbox" id="rating" name="rating" value="{{book.available}}" required><br><br>
+
+        <button type="submit">Edit Book</button>
+        {% if error %}
+            <p style="color: red;">{{error}}<p>
+        {% endif %}
+    </form>
+</body>
+</html>

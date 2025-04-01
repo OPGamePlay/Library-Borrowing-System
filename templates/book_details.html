@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{book.title}}</title>
+</head>
+<body>
+    {% include "tool_bar.html" %}
+
+
+    <h2>{{ book.title }}</h2>
+    <p>Author: {{ book.author }}</p>
+    <p>Publication Year{{ book.publication_year }}</p>
+    <p>Genre: 
+    {% for genre in book.genre%}
+        {{ genre }}
+    {% endfor %}
+    </p>
+    <p>ISBN: {{ book.isbn }}</p>
+    <p>No. of Pages :{{ book.pages }}</p>
+    <p>Publisher :{{ book.publisher }}</p>
+    <p>Cover Image URL: {{ book.cover_image_url }}</p>
+    <p>Rating: {{ book.rating }}</p>
+    {% if user_role == 'admin' %}
+    <a href ='/edit_book?isbn={{ book.isbn }}'>Edit Book</a><br>
+    <a href ='/delete_book?isbn={{ book.isbn }}'>Delete Book</a><br>
+    {% endif%}
+    {% if user_role == 'user' or user_role == 'admin' %}
+        {% if isAvailable %}
+            <a href ='/borrow?isbn={{ book.isbn }}'>Borrow Book</a><br>
+        {% else %}
+            <p>Sorry, all these books have been borrowed out now.</p><br>
+        {% endif %}
+
+    {% endif %}
+    {% if user_role == 'guest' %}
+        <a href ='/login'>Login</a> to borrow books<br>
+    {% endif %}
+</body>
+</html>

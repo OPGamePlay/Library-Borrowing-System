@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Return</title>
+</head>
+<body>
+    {% include "tool_bar.html" %}
+    <h2>Book Return Confirmation </h2>
+
+    <p>Book Id: {{ bookid }}</p>
+    <p>Title: {{ book.title }}</p>
+    <p>Author: {{ book.author }}</p>
+    <p>Publication Year{{ book.publication_year }}</p>
+    <p>Genre: 
+    {% for genre in book.genre%}
+        {{ genre }}
+    {% endfor %}
+    </p>
+    <p>ISBN: {{ book.isbn }}</p>
+    <p>No. of Pages :{{ book.pages }}</p>
+    <p>Publisher :{{ book.publisher }}</p>
+    <p>Cover Image URL: {{ book.cover_image_url }}</p>
+    <p>Rating: {{ book.rating }}</p>
+
+
+    <p>Fine: ${{ fine }}<br></p>
+    <p>Days Late: {% if days_late > 0 %}{{ days_late }}{% else %}Return on time{% endif %}</p>
+
+    <a href="/lib_return_confirm?bookid={{ bookid }}">Confirm</a><br>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Book</title>
+</head>
+<body>
+    {% include "tool_bar.html" %}
+    <h2>Add New Book </h2>
+    <form method="post" action="/add_book">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" required><br><br>
+
+        <label for="publication_year">Publication Year:</label><br>
+        <input type="number" id="publication_year" name="publication_year" required><br><br>
+
+        <label for="genre">Genre (comma-separated):</label><br>
+        <input type="text" id="genre" name="genre" required><br><br>
+
+        <label for="isbn">ISBN:</label><br>
+        <input type="text" id="isbn" name="isbn" required><br><br>
+
+        <label for="pages">Number of Pages:</label><br>
+        <input type="number" id="pages" name="pages" required><br><br>
+
+        <label for="publisher">Publisher:</label><br>
+        <input type="text" id="publisher" name="publisher" required><br><br>
+
+        <label for="cover_image_url">Cover Image URL:</label><br>
+        <input type="text" id="cover_image_url" name="cover_image_url" required><br><br>
+
+        <label for="rating">Rating (1-5):</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+        
+        <button type="submit">Add Book</button>
+        {% if error %}
+            <p style="color: red;">{{error}}<p>
+        {% endif %}
+    </form>
+</body>
+</html>

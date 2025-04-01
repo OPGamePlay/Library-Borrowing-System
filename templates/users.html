@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>user List</title>
+</head>
+<body>
+    {% include "tool_bar.html" %}
+    <form>
+        Username :<input type="text" name="query"><button type="submit">Search</button><br>
+    </form>
+    
+    <h1>User List</h1>
+        {% for user in users %}
+        
+            {% if username != user %}
+                <form>
+                    <input type="hidden" name="username" value="{{ user }}">
+                    <label for="password">Username:{{ user }} | New Password:</label>
+                    <input name="password">
+                    <input type="submit" value="Update">
+                    <a href ='/delete_user?username={{ user }}'>Delete user</a>
+                </form>
+            {% else %}
+            <form>
+                Username:{{ user }}
+            </form>
+            
+            {% endif %}
+
+        {% endfor %}
+        <p>
+        {% if current_page > 1 %}
+        <a href="{{ url_for(request.endpoint) }}?page={{ current_page - 1 }}">Previous Page</a>
+        {% endif %}
+        
+            {{current_page}}/{{total_pages}}
+        {% if current_page < total_pages %}
+        <a href="{{ url_for(request.endpoint) }}?page={{ current_page + 1 }}">Next Page</a>
+        {% endif %}
+        </p>
+
+</body>
+<html>

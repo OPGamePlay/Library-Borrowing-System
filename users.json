@@ -1,0 +1,14 @@
+{
+    "auth": {
+        "Acc1": "pw123",
+        "MikeC": "pw456",
+        "Acc3": "qwe123"
+    },
+    "admin": [
+        "Acc1"
+    ],
+    "user": [
+        "MikeC",
+        "Acc3"
+    ]
+}

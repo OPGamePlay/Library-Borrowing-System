@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='all.css') }}">
+<a href="/booklist">Home</a>
+{% if user_role == 'admin' or user_role == 'user' %}
+    | Welcome {{username}} | 
+    <a href="logout">Logout</a>
+{% else %}
+    | Welcome Guest | 
+    <a href="login">Login</a> | <a href="register">Register</a>
+{% endif %}
+
+
+
+{% if user_role == 'admin' %}
+    | 
+    <a href="/add_book">Add Book</a> |
+    <a href="/lib_book_register">Libary Register</a> |
+    <a href="/lib_return_book">Return Book</a> |
+    <a href="/users">Manage Users</a>
+
+{% endif %}
+
+{% if message %}
+   | {{ message }}
+{% endif %}

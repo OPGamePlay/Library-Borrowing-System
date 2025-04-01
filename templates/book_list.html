@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+</head>
+<body>
+    {% include "tool_bar.html" %}
+    <form>
+        Search :<input type="text" name="query"><button type="submit">Query</button><br>
+        <label for="query_type">Search By:</label><br>
+        <input type="radio" id="title" name="query_type" value="title" checked>
+        <label for="title">Title</label>
+        <input type="radio" id="author" name="query_type" value="author">
+        <label for="author">Author</label><br>
+        <input type="radio" id="genre" name="query_type" value="genre">
+        <label for="genre">Genre</label>
+        <input type="radio" id="isbn" name="query_type" value="isbn">
+        <label for="isbn">ISBN</label><br><br>
+    </form>
+    
+    <h1>Book List</h1>
+      {% for book in books %}
+         <h2>{{ book.title }}</h2>
+          <p>Author: {{ book.author }}</p>
+          <p>Publication Year{{ book.publication_year }}</p>
+          <p>Genre: 
+            {% for genre in book.genre%}
+                {{ genre }}
+            {% endfor %}
+          </p>
+          <p>ISBN: {{ book.isbn }}</p>
+          <p>No. of Pages :{{ book.pages }}</p>
+          <p>Publisher :{{ book.publisher }}</p>
+          <p>Cover Image URL: {{ book.cover_image_url }}</p>
+          <p>Rating: {{ book.rating }}</p>
+          <a href ='/book_details?isbn={{ book.isbn }}'>View Details</a><br>
+          {% if user_role == 'admin' %}
+            <a href ='/edit_book?isbn={{ book.isbn }}'>Edit Book</a><br>
+            <a href ='/delete_book?isbn={{ book.isbn }}'>Delete Book</a>
+          {% endif%}
+
+      {% endfor %}
+      <br><br>
+      <p>
+        {% if current_page > 1 %}
+        <a href="{{ url_for(request.endpoint) }}?page={{ current_page - 1 }}">Previous Page</a>
+        {% endif %}
+        
+            {{current_page}}/{{total_pages}}
+        {% if current_page < total_pages %}
+        <a href="{{ url_for(request.endpoint) }}?page={{ current_page + 1 }}">Next Page</a>
+        {% endif %}
+      </p>
+
+
+
+</body>
+<html>

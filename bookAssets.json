@@ -1,0 +1,27 @@
+{
+    "1": {
+        "isbn": "978-0451524935",
+        "borrow_by": "MikeC",
+        "Due_date": "2025-04-08"
+    },
+    "2": {
+        "isbn": "978-0141439518",
+        "borrow_by": "MikeC",
+        "Due_date": "2025-04-08"
+    },
+    "3": {
+        "isbn": "978-0141439518",
+        "borrow_by": null,
+        "Due_date": null
+    },
+    "4": {
+        "isbn": "978-0141439518",
+        "borrow_by": null,
+        "Due_date": null
+    },
+    "5": {
+        "isbn": "978-0141439518",
+        "borrow_by": null,
+        "Due_date": null
+    }
+}

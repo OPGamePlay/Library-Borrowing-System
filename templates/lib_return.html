@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Return</title>
+</head>
+<body>
+    {% include "tool_bar.html" %}
+    <h2>Book Return </h2>
+    <form method="post" action="/lib_return_book">
+
+
+        <label for="bookid">Book Id:</label><br>
+        <input type="text" id="bookid" name="bookid" required><br><br>
+
+        <button type="submit">Submit</button>
+        {% if message %}
+            <p>{{message}}<p>
+        {% endif %}
+    </form>
+</body>
+</html>
