@@ -1,12 +1,2002 @@
 {
     "1": {
         "isbn": "1933988673",
-        "borrow_by": "MikeC",
-        "Due_date": "2025-04-08"
+        "borrow_by": null,
+        "due_date": null
     },
     "2": {
         "isbn": "1935182722",
-        "borrow_by": "MikeC",
-        "Due_date": "2025-04-08"
+        "borrow_by": null,
+        "due_date": null
+    },
+    "3": {
+        "isbn": "1617290084",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "4": {
+        "isbn": "1933988746",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "5": {
+        "isbn": "1935182420",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "6": {
+        "isbn": "1933988312",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "7": {
+        "isbn": "1933988320",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "8": {
+        "isbn": "1933988797",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "9": {
+        "isbn": "1935182234",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "10": {
+        "isbn": "193518217X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "11": {
+        "isbn": "1933988509",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "13": {
+        "isbn": "1933988762",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "14": {
+        "isbn": "1884777384",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "15": {
+        "isbn": "1933988592",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "16": {
+        "isbn": "1933988711",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "17": {
+        "isbn": "1935182870",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "18": {
+        "isbn": "1884777686",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "19": {
+        "isbn": "1884777864",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "20": {
+        "isbn": "1884777686",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "21": {
+        "isbn": "1884777902",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "22": {
+        "isbn": "193239415X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "23": {
+        "isbn": null,
+        "borrow_by": null,
+        "due_date": null
+    },
+    "24": {
+        "isbn": "1932394885",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "25": {
+        "isbn": "1930110529",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "26": {
+        "isbn": "1932394826",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "27": {
+        "isbn": "133046192",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "28": {
+        "isbn": "1933988649",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "29": {
+        "isbn": "1933988355",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "30": {
+        "isbn": "1935182323",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "31": {
+        "isbn": "1884777295",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "32": {
+        "isbn": "1932394699",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "33": {
+        "isbn": "1933988657",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "35": {
+        "isbn": "1933988452",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "36": {
+        "isbn": "1935182463",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "37": {
+        "isbn": "1935182080",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "38": {
+        "isbn": "1884777554",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "39": {
+        "isbn": "133034054",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "40": {
+        "isbn": "131723979",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "41": {
+        "isbn": "1617291269",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "42": {
+        "isbn": "193398886X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "43": {
+        "isbn": "1933988428",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "45": {
+        "isbn": "193518220X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "46": {
+        "isbn": "1884777600",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "48": {
+        "isbn": "188477752X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "51": {
+        "isbn": "1884777368",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "52": {
+        "isbn": "1935182307",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "53": {
+        "isbn": "193398872X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "54": {
+        "isbn": "1935182927",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "55": {
+        "isbn": "1884777791",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "56": {
+        "isbn": "1933988290",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "59": {
+        "isbn": "1932394613",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "60": {
+        "isbn": "1932394990",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "61": {
+        "isbn": "1933988037",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "63": {
+        "isbn": "1932394583",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "64": {
+        "isbn": "1930110006",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "65": {
+        "isbn": "1935182897",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "66": {
+        "isbn": "1933988401",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "67": {
+        "isbn": "1932394982",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "68": {
+        "isbn": "1933988541",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "69": {
+        "isbn": "193398807X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "70": {
+        "isbn": "1884777929",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "71": {
+        "isbn": "1930110545",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "72": {
+        "isbn": "1932394389",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "73": {
+        "isbn": "193518296X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "74": {
+        "isbn": "1617290270",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "75": {
+        "isbn": "1932394494",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "76": {
+        "isbn": "1930110405",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "77": {
+        "isbn": "1933988967",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "79": {
+        "isbn": "1884777678",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "117": {
+        "isbn": "1932394524k-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "118": {
+        "isbn": "1932394524l-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "119": {
+        "isbn": "1932394524m-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "120": {
+        "isbn": "1932394524n-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "121": {
+        "isbn": "1932394524b-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "122": {
+        "isbn": "1932394524c-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "123": {
+        "isbn": "1932394524d-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "124": {
+        "isbn": "1932394524e-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "125": {
+        "isbn": "1932394524f-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "126": {
+        "isbn": "1932394524g-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "127": {
+        "isbn": "1932394524h-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "128": {
+        "isbn": "1932394524i-e",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "129": {
+        "isbn": "1884777813",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "130": {
+        "isbn": "1930110197",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "131": {
+        "isbn": "1933988932",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "132": {
+        "isbn": "1884777759",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "133": {
+        "isbn": "1933988916",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "135": {
+        "isbn": "1933988231",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "136": {
+        "isbn": "1884777740",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "137": {
+        "isbn": "1933988754",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "139": {
+        "isbn": "1930110588",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "140": {
+        "isbn": "1932394281",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "141": {
+        "isbn": "1933988177",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "142": {
+        "isbn": "1884777708",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "143": {
+        "isbn": "1884777538",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "144": {
+        "isbn": "1884777546",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "145": {
+        "isbn": "193518248X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "146": {
+        "isbn": "1935182412",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "147": {
+        "isbn": "1617290262",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "148": {
+        "isbn": null,
+        "borrow_by": null,
+        "due_date": null
+    },
+    "149": {
+        "isbn": "1930110979",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "150": {
+        "isbn": "138582262",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "152": {
+        "isbn": "1935182633",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "153": {
+        "isbn": "188477749X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "154": {
+        "isbn": "1932394249",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "155": {
+        "isbn": "1935182366",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "156": {
+        "isbn": "193398838X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "158": {
+        "isbn": "1933988029",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "159": {
+        "isbn": "1933988398",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "160": {
+        "isbn": "1930110820",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "161": {
+        "isbn": "1617290017",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "162": {
+        "isbn": "1884777805",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "163": {
+        "isbn": "1617290211",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "164": {
+        "isbn": "1935182390",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "165": {
+        "isbn": "9781935182924",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "167": {
+        "isbn": "1932394680",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "168": {
+        "isbn": "1935182277",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "169": {
+        "isbn": "1935182552",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "170": {
+        "isbn": "1932394133",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "172": {
+        "isbn": "1930110057",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "173": {
+        "isbn": "1932394834",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "174": {
+        "isbn": "1932394842",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "175": {
+        "isbn": "1935182447",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "176": {
+        "isbn": "132612313",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "177": {
+        "isbn": "1932394850",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "178": {
+        "isbn": "1935182579",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "179": {
+        "isbn": "1935182943",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "180": {
+        "isbn": "1884777473",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "181": {
+        "isbn": "1884777597",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "182": {
+        "isbn": "1932394923",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "183": {
+        "isbn": "1932394222",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "184": {
+        "isbn": "1930110936",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "185": {
+        "isbn": "1933988053",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "186": {
+        "isbn": "1935182196",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "187": {
+        "isbn": "1884777775",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "188": {
+        "isbn": "1932394001",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "189": {
+        "isbn": "1935182250",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "190": {
+        "isbn": "1933988894",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "192": {
+        "isbn": "1884777082",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "193": {
+        "isbn": "1884777066",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "194": {
+        "isbn": "1932394117",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "195": {
+        "isbn": "1932394532",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "196": {
+        "isbn": "1935182498",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "197": {
+        "isbn": "1933988789",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "198": {
+        "isbn": "1933988819",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "199": {
+        "isbn": "133964256",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "200": {
+        "isbn": "1933988487",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "201": {
+        "isbn": "193239480X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "202": {
+        "isbn": "193518234X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "203": {
+        "isbn": "1932394796",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "204": {
+        "isbn": "1935182617",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "205": {
+        "isbn": "138412146",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "206": {
+        "isbn": "131271687",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "208": {
+        "isbn": "1932394478",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "209": {
+        "isbn": "1932394508",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "210": {
+        "isbn": "1884777651",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "211": {
+        "isbn": "013319955X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "212": {
+        "isbn": "1932394125",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "213": {
+        "isbn": "1933988169",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "214": {
+        "isbn": "132869985",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "215": {
+        "isbn": "1933988665",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "216": {
+        "isbn": "1930110995",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "217": {
+        "isbn": "1935182854",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "218": {
+        "isbn": "1933988479",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "219": {
+        "isbn": "1884777481",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "220": {
+        "isbn": "1884777449",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "221": {
+        "isbn": "132621894",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "222": {
+        "isbn": "137353006",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "223": {
+        "isbn": "1933988991",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "224": {
+        "isbn": "1935182188",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "225": {
+        "isbn": "193239477X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "226": {
+        "isbn": "1617290149",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "227": {
+        "isbn": "1884777503",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "228": {
+        "isbn": "1884777465",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "229": {
+        "isbn": "1884777716",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "230": {
+        "isbn": "1935182048",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "231": {
+        "isbn": "9781935182047",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "232": {
+        "isbn": "9781935182047",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "233": {
+        "isbn": "1935182269",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "235": {
+        "isbn": "1930110855",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "236": {
+        "isbn": "1933988274",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "237": {
+        "isbn": "1935182684",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "238": {
+        "isbn": "1933988622",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "239": {
+        "isbn": "193518279X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "240": {
+        "isbn": "1617290416",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "241": {
+        "isbn": "1933988347",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "242": {
+        "isbn": "1935182994",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "243": {
+        "isbn": "1932394206",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "244": {
+        "isbn": "1884777767",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "245": {
+        "isbn": "1930110049",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "246": {
+        "isbn": "1932394907",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "247": {
+        "isbn": "1935182137",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "248": {
+        "isbn": "1935182374",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "249": {
+        "isbn": "1617290319",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "250": {
+        "isbn": "1932394419",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "251": {
+        "isbn": "1935182625",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "252": {
+        "isbn": "1617290092",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "253": {
+        "isbn": "1935182803",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "254": {
+        "isbn": "1930110065",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "255": {
+        "isbn": "1933988924",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "256": {
+        "isbn": "1617290181",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "257": {
+        "isbn": "193398855X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "258": {
+        "isbn": "1932394591",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "259": {
+        "isbn": "1933988215",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "260": {
+        "isbn": "1617290122",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "261": {
+        "isbn": "1933988606",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "262": {
+        "isbn": "1932394230",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "263": {
+        "isbn": "1932394621",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "264": {
+        "isbn": "1935182595",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "265": {
+        "isbn": "1935182757",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "266": {
+        "isbn": "134529308",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "267": {
+        "isbn": "1932394753",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "269": {
+        "isbn": "193398869X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "270": {
+        "isbn": "132623129",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "271": {
+        "isbn": "1884777848",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "272": {
+        "isbn": "193011088X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "273": {
+        "isbn": "1884777562",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "274": {
+        "isbn": "013268327X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "275": {
+        "isbn": "1935182528",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "276": {
+        "isbn": "1884777694",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "277": {
+        "isbn": "1933988266",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "278": {
+        "isbn": "1933988495",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "279": {
+        "isbn": "1932394400",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "280": {
+        "isbn": "1935182544",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "281": {
+        "isbn": "1932394273",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "282": {
+        "isbn": "1617290173",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "283": {
+        "isbn": "138892709",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "284": {
+        "isbn": "1935182501",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "285": {
+        "isbn": "1930110359",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "286": {
+        "isbn": "193518282X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "287": {
+        "isbn": "193011009X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "289": {
+        "isbn": "1930110464",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "290": {
+        "isbn": "1884777392",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "291": {
+        "isbn": "1935182005",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "292": {
+        "isbn": "1617290114",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "293": {
+        "isbn": "132632942",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "294": {
+        "isbn": "1932394818",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "295": {
+        "isbn": "1933988363",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "296": {
+        "isbn": "1935182471",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "297": {
+        "isbn": "1884777589",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "298": {
+        "isbn": "1933988258",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "299": {
+        "isbn": "1933988940",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "300": {
+        "isbn": "138411808",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "302": {
+        "isbn": "1935182730",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "303": {
+        "isbn": "1935182706",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "304": {
+        "isbn": "1930110561",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "305": {
+        "isbn": "1930110944",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "306": {
+        "isbn": "1935182846",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "307": {
+        "isbn": "1935182021",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "308": {
+        "isbn": "193011043X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "309": {
+        "isbn": "1930110952",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "310": {
+        "isbn": "1935182951",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "312": {
+        "isbn": "1930110456",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "313": {
+        "isbn": "1935182587",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "314": {
+        "isbn": "1932394761",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "315": {
+        "isbn": "1935182129",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "316": {
+        "isbn": "1930110022",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "317": {
+        "isbn": "1935182978",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "318": {
+        "isbn": "1932394052",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "319": {
+        "isbn": "1932394354",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "320": {
+        "isbn": "1933988134",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "321": {
+        "isbn": "1935182358",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "325": {
+        "isbn": "1935182056",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "327": {
+        "isbn": "1930110332",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "328": {
+        "isbn": "1935182714",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "329": {
+        "isbn": "1935182773",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "330": {
+        "isbn": "1933988770",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "331": {
+        "isbn": "188477766X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "332": {
+        "isbn": "1884777872",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "334": {
+        "isbn": "1884777783",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "335": {
+        "isbn": "9781935182078",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "512": {
+        "isbn": "1617290130",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "513": {
+        "isbn": "1617290327",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "514": {
+        "isbn": "1617290505",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "515": {
+        "isbn": "1617290246",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "516": {
+        "isbn": "1617290572",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "517": {
+        "isbn": "1617290548",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "519": {
+        "isbn": "020152029X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "520": {
+        "isbn": "1884777996",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "521": {
+        "isbn": "1884777643",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "522": {
+        "isbn": "193239429X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "523": {
+        "isbn": "1930110421",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "525": {
+        "isbn": "132612496",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "530": {
+        "isbn": "013889213X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "531": {
+        "isbn": "1884777228",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "532": {
+        "isbn": "1884777147",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "533": {
+        "isbn": "1930110596",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "549": {
+        "isbn": "1617290386",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "550": {
+        "isbn": "1617290343",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "551": {
+        "isbn": "1617290629",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "559": {
+        "isbn": "1617290475",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "560": {
+        "isbn": "1617290491",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "562": {
+        "isbn": "1617290459",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "566": {
+        "isbn": "1617290238",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "569": {
+        "isbn": "1617290521",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "571": {
+        "isbn": "1617290610",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "577": {
+        "isbn": "1617290432",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "580": {
+        "isbn": "1617290564",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "591": {
+        "isbn": "1617290556",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "599": {
+        "isbn": "1617290165",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "607": {
+        "isbn": "1617290599",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "611": {
+        "isbn": "1617290394",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "620": {
+        "isbn": "1617290823",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "624": {
+        "isbn": "1617290750",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "628": {
+        "isbn": "1617290890",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "629": {
+        "isbn": "1617290904",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "631": {
+        "isbn": "1617290920",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "632": {
+        "isbn": "1617290866",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "634": {
+        "isbn": "1617290858",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "636": {
+        "isbn": "161729084X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "637": {
+        "isbn": "1617290769",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "639": {
+        "isbn": "1617290777",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "640": {
+        "isbn": "1617290653",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "641": {
+        "isbn": "1617290793",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "642": {
+        "isbn": "1617290939",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "643": {
+        "isbn": "1617290955",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "644": {
+        "isbn": "1617290947",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "645": {
+        "isbn": "1617290971",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "646": {
+        "isbn": "161729098X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "648": {
+        "isbn": "1617291005",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "649": {
+        "isbn": "1617291013",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "650": {
+        "isbn": "161729103X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "651": {
+        "isbn": "1617291048",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "652": {
+        "isbn": "1617291056",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "653": {
+        "isbn": "1617291021",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "655": {
+        "isbn": "1617291072",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "656": {
+        "isbn": "1884777864",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "657": {
+        "isbn": "1617290963",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "658": {
+        "isbn": "1617291099",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "659": {
+        "isbn": "1617291080",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "662": {
+        "isbn": "1617291145",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "663": {
+        "isbn": "1617291161",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "664": {
+        "isbn": "1617291153",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "667": {
+        "isbn": "1930110324",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "670": {
+        "isbn": "1617291196",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "671": {
+        "isbn": "161729120X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "672": {
+        "isbn": "1617291218",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "676": {
+        "isbn": "1617291242",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "677": {
+        "isbn": "1617291250",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "678": {
+        "isbn": "1617291277",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "679": {
+        "isbn": "1617291315",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "680": {
+        "isbn": "1617291307",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "681": {
+        "isbn": "1617291293",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "683": {
+        "isbn": "1617291331",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "684": {
+        "isbn": "1617291358",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "685": {
+        "isbn": "1617291323",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "686": {
+        "isbn": "161729134X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "688": {
+        "isbn": "1617291390",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "689": {
+        "isbn": "1617291382",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "691": {
+        "isbn": "1617291412",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "692": {
+        "isbn": "1617291420",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "693": {
+        "isbn": "1617291439",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "696": {
+        "isbn": "1617291455",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "697": {
+        "isbn": "1617291471",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "699": {
+        "isbn": "1617291501",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "700": {
+        "isbn": "161729148X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "702": {
+        "isbn": "1617291536",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "703": {
+        "isbn": "1617291528",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "706": {
+        "isbn": "1617291560",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "707": {
+        "isbn": null,
+        "borrow_by": null,
+        "due_date": null
+    },
+    "711": {
+        "isbn": "1617291617",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "712": {
+        "isbn": "1617291625",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "716": {
+        "isbn": "1617291684",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "717": {
+        "isbn": "1617291706",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "719": {
+        "isbn": "161729165X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "723": {
+        "isbn": "1617291374",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "724": {
+        "isbn": "1617291749",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "727": {
+        "isbn": "1617291757",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "728": {
+        "isbn": "1617291692",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "729": {
+        "isbn": "1617291781",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "731": {
+        "isbn": "1617291811",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "732": {
+        "isbn": "1617291838",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "733": {
+        "isbn": "161729182X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "736": {
+        "isbn": "1617291803",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "740": {
+        "isbn": "1617291897",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "743": {
+        "isbn": "1617291927",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "744": {
+        "isbn": "1617291935",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "746": {
+        "isbn": "1617291943",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "748": {
+        "isbn": "1617291951",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "749": {
+        "isbn": "1617291978",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "750": {
+        "isbn": "1617291986",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "751": {
+        "isbn": "1617291994",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "753": {
+        "isbn": "161729201X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "755": {
+        "isbn": "1617291609",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "757": {
+        "isbn": "1617292036",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "761": {
+        "isbn": "1617292079",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "764": {
+        "isbn": "1617292117",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "765": {
+        "isbn": "1617292133",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "766": {
+        "isbn": "1617292141",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "767": {
+        "isbn": "161729215X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "771": {
+        "isbn": "1617292214",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "772": {
+        "isbn": "1617292222",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "774": {
+        "isbn": "1617292192",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "776": {
+        "isbn": "1617292168",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "777": {
+        "isbn": "1617292184",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "785": {
+        "isbn": "1617292338",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "786": {
+        "isbn": "161729232X",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "794": {
+        "isbn": "1617292427",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "795": {
+        "isbn": "1617292419",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "796": {
+        "isbn": "1617292435",
+        "borrow_by": null,
+        "due_date": null
+    },
+    "797": {
+        "isbn": "9999999999999",
+        "borrow_by": null,
+        "due_date": null
     }
 }

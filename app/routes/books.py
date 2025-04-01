@@ -56,7 +56,7 @@ def detail():
     isbn = request.args.get("isbn", None)
     book = None
     if isbn:
-        books, _ = db_book.query_book_by("isbn", isbn, 1, 1)
+        books, _ = db_book.query_book_by("isbn", isbn, 1, 1, use_fuzzy=False)
 
     if books:
         book = books.copy()[0]
@@ -85,8 +85,8 @@ def detail():
 def add_book_page():
     username = request.cookies.get("username", None)
     password = request.cookies.get("password", None)
-
-    if db_user.authenticate(username, password) == "admin":
+    role = db_user.authenticate(username, password)
+    if role == "admin":
         error = request.args.get("error", -1)
         error_message = None
 
@@ -98,7 +98,7 @@ def add_book_page():
         if int(error) < len(error_messages) and int(error) >= 0:
             error_message = error_messages[int(error)]
 
-        return render_template("add_book.html", error=error_message)
+        return render_template("add_book.html", error=error_message, user_role=role)
 
     else:
         return redirect("/booklist?message=Permission denied.")
@@ -121,7 +121,7 @@ def add_book():
     shortDescription = request.form.get("shortDescription", "")
     longDescription = request.form.get("longDescription", "")
 
-    ok, message_code = db_book.editBook(
+    ok, message_code = db_book.addBook(
         title,
         authors,
         categories,
@@ -144,11 +144,10 @@ def edit_book_page():
     user_role = db_user.authenticate(username, password)
     if user_role != "admin":
         return redirect("/booklist?message=Permission denied.")
-    book_id = request.args.get("isbn", None)
+    isbn = request.args.get("isbn", None)
     book = None
-
-    if book_id:
-        books, _ = db_book.query_book_by("isbn", book_id, 1, 1)
+    if isbn:
+        books, _ = db_book.query_book_by("isbn", isbn, 1, 1, use_fuzzy=False)
 
     if books:
         book = books.copy()[0]
@@ -183,7 +182,9 @@ def edit_book():
     password = request.cookies.get("password", None)
     if db_user.authenticate(username, password) != "admin":
         return redirect("/booklist?message=Permission denied.")
+    print(request.form)
 
+    book_id = request.form.get("book_id", "")
     title = request.form.get("title", None)
     authors_input = request.form.get("authors", "")
     categories_input = request.form.get("categories", "")
@@ -211,6 +212,7 @@ def edit_book():
     session.pop("original_categories", None)
 
     ok, message_code = db_book.editBook(
+        book_id,
         title,
         authors,
         categories,

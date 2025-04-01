@@ -15,11 +15,29 @@ class BookDB:
         with self.assets_path.open("r") as file:
             self.bookAsset: dict = json.load(file)
 
-    def return_book(self, bookid):
-        lib_book = self.bookAsset.get(bookid, None)
-        lib_book["Due_date"] = None
-        lib_book["borrow_by"] = None
-        with open("bookAssets.json", "w") as file:
+    def get_borrowed_book(self, book_id, isbn):
+        book_id = str(book_id)
+
+        if book_id not in self.bookAsset:
+            return None, None
+
+        book_asset = self.bookAsset[book_id]
+        if book_asset["isbn"] != isbn:
+            return None, None
+
+        if book_asset["borrow_by"] is None:
+            return None, None
+
+        return book_id, book_asset
+
+    def return_book(self, book_id, isbn):
+        assets_id, _ = self.get_borrowed_book(book_id, isbn)
+        if assets_id is None:
+            return False
+
+        self.bookAsset[assets_id]["due_date"] = None
+        self.bookAsset[assets_id]["borrow_by"] = None
+        with self.assets_path.open("w") as file:
             json.dump(self.bookAsset, file, indent=4)
         return True
 
@@ -35,44 +53,47 @@ class BookDB:
             matches = False
 
             if query_type == "title":
+                book_title = book.get("title", "")
                 if use_fuzzy:
-                    score = fuzz.partial_ratio(query.lower(), book["title"].lower())
+                    score = fuzz.partial_ratio(query.lower(), book_title.lower())
                     matches = score >= threshold
                 else:
-                    matches = query.lower() in book["title"].lower()
+                    matches = query.lower() in book_title.lower()
 
             elif query_type == "author":
+                book_authors = book.get("authors", [])
                 if use_fuzzy:
                     scores = [
                         fuzz.partial_ratio(query.lower(), author.lower())
-                        for author in book["authors"]
+                        for author in book_authors
                     ]
                     matches = any(score >= threshold for score in scores)
                 else:
                     matches = any(
-                        query.lower() in author.lower() for author in book["authors"]
+                        query.lower() in author.lower() for author in book_authors
                     )
 
             elif query_type == "categories":
+                book_categories = book.get("categories", [])
                 if use_fuzzy:
                     scores = [
                         fuzz.partial_ratio(query.lower(), category.lower())
-                        for category in book["categories"]
+                        for category in book_categories
                     ]
                     matches = any(score >= threshold for score in scores)
                 else:
                     matches = any(
                         query.lower() in category.lower()
-                        for category in book["categories"]
+                        for category in book_categories
                     )
 
             elif query_type == "isbn":
+                book_isbn = book.get("isbn", "")
                 if use_fuzzy:
-                    score = fuzz.partial_ratio(query.lower(), book["isbn"].lower())
+                    score = fuzz.partial_ratio(query.lower(), book_isbn.lower())
                     matches = score >= threshold
                 else:
-                    matches = query in book["isbn"]
-
+                    matches = query in book_isbn
             if matches:
                 matching_books.append(book)
 
@@ -88,42 +109,33 @@ class BookDB:
 
         return paginated_books, total_pages
 
-    def library_book_registry(self, isbn, book_id):
-        isbn_exists = False
-        for book in self.booksInfo:
-            if isbn == book["isbn"]:
-                isbn_exists = True
-                break
-
-        if book_id not in self.bookAsset.keys() and isbn_exists:
-            self.bookAsset[book_id] = {
-                "isbn": isbn,
-                "borrow_by": None,
-                "Due_date": None,
-            }
-            with open("bookAssets.json", "w") as file:
-                json.dump(self.bookAsset, file, indent=4)
-            return True
-        else:
-            return False
-
     def getAvailable_bookid(self, isbn):
-        for book_id in self.bookAsset.keys():
-            if (
-                self.bookAsset[book_id]["isbn"] == isbn
-                and self.bookAsset[book_id]["borrow_by"] is None
-            ):
-                return book_id
+        isbn_exists = False
+        for book_id, book_asset in self.bookAsset.items():
+            if book_asset["isbn"] == isbn:
+                isbn_exists = True
+                # If we find an available copy, return its ID
+                if book_asset["borrow_by"] is None:
+                    return book_id
+
+        if not isbn_exists:
+            new_id = str(max([int(id) for id in self.bookAsset.keys()], default=0) + 1)
+            self.bookAsset[new_id] = {"isbn": isbn, "borrow_by": None, "due_date": None}
+            # Save the updated bookAssets
+            with self.assets_path.open("w") as file:
+                json.dump(self.bookAsset, file, indent=4)
+            return new_id
+
         return None
 
     def library_book_borrow(self, book_id, username):
         if book_id in self.bookAsset.keys():
             if self.bookAsset[book_id]["borrow_by"] is None:
                 self.bookAsset[book_id]["borrow_by"] = username
-                self.bookAsset[book_id]["Due_date"] = (
+                self.bookAsset[book_id]["due_date"] = (
                     datetime.datetime.now() + datetime.timedelta(days=7)
                 ).strftime("%Y-%m-%d")
-                with open("bookAssets.json", "w") as file:
+                with self.assets_path.open("w") as file:
                     json.dump(self.bookAsset, file, indent=4)
                 return True, (
                     datetime.datetime.now() + datetime.timedelta(days=7)
@@ -146,7 +158,8 @@ class BookDB:
         longDescription,
     ):
         for book in self.booksInfo:
-            if book["isbn"] == isbn:
+            book_isbn = book.get("isbn", "")
+            if book_isbn == isbn:
                 return False, 0
         if int(pageCount) <= 0:
             return False, 1
@@ -166,9 +179,7 @@ class BookDB:
             "title": title,
             "isbn": isbn,
             "pageCount": pageCount,
-            "publishedDate": {
-                "date": datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S.000-0700")
-            },
+            "publishedDate": {"date": publishedDate},
             "thumbnailUrl": thumbnailUrl,
             "shortDescription": shortDescription,
             "longDescription": longDescription,
@@ -177,15 +188,23 @@ class BookDB:
         }
 
         self.booksInfo.append(new_book)
-        with open("books.json", "w") as file:
+        with self.books_path.open("w") as file:
             json.dump(self.booksInfo, file, indent=4)
+
+        self.bookAsset[str(new_id)] = {
+            "isbn": isbn,
+            "borrow_by": None,
+            "due_date": None,
+        }
+        with self.assets_path.open("w") as file:
+            json.dump(self.bookAsset, file, indent=4)
         return True, -1
 
     def deleteBook(self, isbn):
         for book in self.booksInfo:
             if book["isbn"] == isbn:
                 self.booksInfo.remove(book)
-                with open("books.json", "w") as file:
+                with self.books_path.open("w") as file:
                     json.dump(self.booksInfo, file, indent=4)
                 return True
         return False
@@ -205,12 +224,12 @@ class BookDB:
     ):
         if int(pageCount) <= 0:
             return False, 1
-
-        # Convert authors and categories to lists if they're strings
         if isinstance(authors, str):
             authors = [author.strip() for author in authors.split(",")]
         if isinstance(categories, str):
             categories = [category.strip() for category in categories.split(",")]
+        if isinstance(book_id, str):
+            book_id = int(book_id)
 
         for i, book in enumerate(self.booksInfo):
             if book["_id"] == book_id:
@@ -219,15 +238,21 @@ class BookDB:
                     "title": title,
                     "isbn": isbn,
                     "pageCount": pageCount,
-                    "publishedDate": book["publishedDate"],
+                    "publishedDate": publishedDate,
                     "thumbnailUrl": thumbnailUrl,
                     "shortDescription": shortDescription,
                     "longDescription": longDescription,
                     "authors": authors,
                     "categories": categories,
                 }
-                with open("books.json", "w") as file:
+                with self.books_path.open("w") as file:
                     json.dump(self.booksInfo, file, indent=4)
+                asset_id = str(book_id)
+                if asset_id in self.bookAsset:
+                    self.bookAsset[asset_id]["isbn"] = isbn
+                    with self.assets_path.open("w") as file:
+                        json.dump(self.bookAsset, file, indent=4)
+
                 return True, -1
         return False, 0
 

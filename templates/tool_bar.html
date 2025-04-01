@@ -8,13 +8,8 @@
         <div class="navbar-nav">
             {% if user_role == 'admin' %}
                 <a class="nav-link" href="/add_book">Add Book</a>
-                <a class="nav-link" href="/lib_book_register">Library Register</a>
-                <a class="nav-link" href="/lib_return_book">Return Book</a>
+                <a class="nav-link" href="/lib_return_book">Return</a>
                 <a class="nav-link" href="/users">Manage Users</a>
-            {% endif %}
-
-            {% if message %}
-                <span class="navbar-text">{{ message }}</span>
             {% endif %}
 
             {% if user_role == 'admin' or user_role == 'user' %}
