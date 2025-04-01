@@ -2,32 +2,89 @@
 <html>
 <head>
     <title>Book Return</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .return-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-info {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .fine-info {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .fine-info.late {
+            background-color: #ffe5e5;
+        }
+
+        .fine-info.on-time {
+            background-color: #e5ffe5;
+        }
+
+        .confirm-button {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     {% include "tool_bar.html" %}
-    <h2>Book Return Confirmation </h2>
+    
+    <div class="return-container">
+        <h2 class="mb-4">Book Return Confirmation</h2>
 
-    <p>Book Id: {{ bookid }}</p>
-    <p>Title: {{ book.title }}</p>
-    <p>Author: {{ book.author }}</p>
-    <p>Publication Year{{ book.publication_year }}</p>
-    <p>Genre: 
-    {% for genre in book.genre%}
-        {{ genre }}
-    {% endfor %}
-    </p>
-    <p>ISBN: {{ book.isbn }}</p>
-    <p>No. of Pages :{{ book.pages }}</p>
-    <p>Publisher :{{ book.publisher }}</p>
-    <p>Cover Image URL: {{ book.cover_image_url }}</p>
-    <p>Rating: {{ book.rating }}</p>
+        <div class="book-info">
+            {% if book._id %}<p><strong>Book ID:</strong> {{ book._id }}</p>{% endif %}
+            <p><strong>Title:</strong> {{ book.title }}</p>
+            <p><strong>Authors:</strong> 
+                {% for author in book.authors %}
+                    {{ author }}{% if not loop.last %}, {% endif %}
+                {% endfor %}
+            </p>
+            <p><strong>Publication Date:</strong> {{ book.publishedDate }}</p>
+            <p><strong>Categories:</strong> 
+                {% for category in book.categories %}
+                    {{ category }}{% if not loop.last %}, {% endif %}
+                {% endfor %}
+            </p>
+            <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+            <p><strong>Pages:</strong> {{ book.pageCount }}</p>
+            {% if book.thumbnailUrl %}
+                <p><strong>Thumbnail URL:</strong> {{ book.thumbnailUrl }}</p>
+            {% endif %}
+        </div>
 
+        <div class="fine-info {% if days_late > 0 %}late{% else %}on-time{% endif %}">
+            <h4>Return Status</h4>
+            <p><strong>Fine:</strong> ${{ fine }}</p>
+            <p><strong>Days Late:</strong> 
+                {% if days_late > 0 %}
+                    {{ days_late }} days
+                {% else %}
+                    Return on time
+                {% endif %}
+            </p>
+        </div>
 
-    <p>Fine: ${{ fine }}<br></p>
-    <p>Days Late: {% if days_late > 0 %}{{ days_late }}{% else %}Return on time{% endif %}</p>
+        <div class="confirm-button">
+            <a href="/lib_return_confirm?bookid={{ book._id }}" class="btn btn-primary">Confirm Return</a>
+        </div>
+    </div>
 
-    <a href="/lib_return_confirm?bookid={{ bookid }}">Confirm</a><br>
-
-    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
