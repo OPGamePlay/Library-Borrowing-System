@@ -57,6 +57,8 @@ def detail():
     book = None
     if isbn:
         books, _ = db_book.query_book_by("isbn", isbn, 1, 1, use_fuzzy=False)
+    else:
+        return redirect("/booklist?message=ISBN Invalid")
 
     if books:
         book = books.copy()[0]
@@ -98,7 +100,7 @@ def add_book_page():
         if int(error) < len(error_messages) and int(error) >= 0:
             error_message = error_messages[int(error)]
 
-        return render_template("add_book.html", error=error_message, user_role=role)
+        return render_template("add_book.html", error=error_message, user_role=role, username = username)
 
     else:
         return redirect("/booklist?message=Permission denied.")
@@ -148,7 +150,8 @@ def edit_book_page():
     book = None
     if isbn:
         books, _ = db_book.query_book_by("isbn", isbn, 1, 1, use_fuzzy=False)
-
+    else:
+        return redirect("/booklist?message=ISBN Invalid")
     if books:
         book = books.copy()[0]
 

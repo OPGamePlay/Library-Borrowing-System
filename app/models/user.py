@@ -10,7 +10,7 @@ class UserDB:
             self.data = json.load(file)
         self.authJson: dict = self.data["auth"]
         self.admins: dict = self.data["admin"]
-        self.users: dict = self.data["user"]
+        self.users: list = self.data["user"]
 
     def authenticate(self, username, password):
         if username and password:
